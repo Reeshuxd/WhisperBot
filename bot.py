@@ -20,9 +20,9 @@ db = {}
 @bot.on(events.NewMessage(pattern="^[!?/]start$"))
 async def stsrt(event):
     await event.reply(
-            "**Heya, I am a Whisper Bot!**",
+            "**Ei, eu sou um Whisper Bot!**",
             buttons=[
-                [Button.switch_inline("Go Inline", query="")]
+                [Button.switch_inline("Conversar", query="")]
                 ]
             )
 
@@ -33,11 +33,11 @@ async def die(event):
         return
     me = (await bot.get_me()).username
     dn = event.builder.article(
-            title="It's a whisper bot!",
-            description="It's a whisper Bot!\n(c) Reeshuxd",
-            text=f"**It's a whisper bot**\n`@{me} wspr UserID|Message`\n**(c) Reeshuxd**",
+            title="É um robô de sussurro!",
+            description="É um bot sussurro!\n(c) Morty",
+            text=f"**É um sussurro bot**\n`@{me} wspr UserID|Message`\n**(c) morty**",
             buttons=[
-                [Button.switch_inline(" Go Inline ", query="wspr ")]
+                [Button.switch_inline(" conversar ", query="wspr ")]
                 ]
             )
     await event.answer([dn])
@@ -57,7 +57,7 @@ async def inline(event):
     except ValueError:
         await event.answer(
                 [],
-                switch_pm=f"Give a message too!",
+                switch_pm=f"Dê uma mensagem também!",
                 switch_pm_param="start"
                 )
     try:
@@ -65,28 +65,28 @@ async def inline(event):
     except BaseException:
         await event.answer(
                 [],
-                switch_pm="Invalid User ID/Username",
+                switch_pm="ID de usuário / nome de usuário inválido",
                 switch_pm_param="start"
                 )
         return
     db.update({"user_id": ui.user.id, "msg": msg, "self": event.sender.id})
     text = f"""
-A Whisper Has Been Sent
+Um sussurro foi enviado
 To [{ui.user.first_name}](tg://user?id={ui.user.id})!
-Click The Below Button To See The Message!
-**Note:** __Only {ui.user.first_name} can open this!__
+Clique no botão abaixo para ver a mensagem!
+**Observação:** __Apenas {ui.user.first_name} pode abrir isto!__
     """
     dn = event.builder.article(
             title="Its a secret message! Sssh",
-            description="It's a secret message! Sssh!",
+            description="É uma mensagem secreta! Sssh!",
             text=text,
             buttons=[
-                [Button.inline(" Show Message! ", data="wspr")]
+                [Button.inline(" Mostrar mensagem! ", data="wspr")]
                 ]
             )
     await event.answer(
             [dn],
-            switch_pm="It's a secret message! Sssh",
+            switch_pm="É uma mensagem secreta! Sssh",
             switch_pm_param="start"
             )
 
@@ -97,14 +97,14 @@ async def ws(event):
     lol = [int(db["self"])]
     lol.append(user)
     if event.sender.id not in lol:
-        await event.answer("🔐 This message is not for you!", alert=True)
+        await event.answer("🔐 Esta mensagem não é para você!", alert=True)
         return
     msg = db["msg"]
     if msg == []:
         await event.anwswer(
-                "Oops!\nIt's looks like message got deleted from my server!", alert=True)
+                "Ops!\nParece que a mensagem foi excluída do meu servidor!", alert=True)
         return
     await event.answer(msg, alert=True)
 
-print("Succesfully Started Bot!")
+print("Bot iniciado com sucesso!")
 bot.run_until_disconnected()
