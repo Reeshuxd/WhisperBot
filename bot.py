@@ -20,9 +20,9 @@ db = {}
 @bot.on(events.NewMessage(pattern="^[!?/]start$"))
 async def stsrt(event):
     await event.reply(
-            "**Heya, I am a Whisper Bot!**",
+            "𝗛𝗲𝘆𝗮, 𝗜 𝗮𝗺 𝗮 𝗪𝗵𝗶𝘀𝗽𝗲𝗿 𝗕𝗼𝘁!😀",
             buttons=[
-                [Button.switch_inline("Go Inline", query="")]
+                [Button.switch_inline("𝗚𝗼 𝗜𝗻𝗹𝗶𝗻𝗲", query="")]
                 ]
             )
 
@@ -34,10 +34,10 @@ async def die(event):
     me = (await bot.get_me()).username
     dn = event.builder.article(
             title="It's a whisper bot!",
-            description="It's a whisper Bot!\n(c) Reeshuxd",
-            text=f"**It's a whisper bot**\n`@{me} wspr UserID|Message`\n**(c) Reeshuxd**",
+            description="It's a whisper Bot!\n(c) SC Projects LK",
+            text=f"**It's a whisper bot**\n`@{me} whisper UserID|Message`\n**(c) SC Projects LK**",
             buttons=[
-                [Button.switch_inline(" Go Inline ", query="wspr ")]
+                [Button.switch_inline(" 𝗚𝗼 𝗜𝗻𝗹𝗶𝗻𝗲 ", query="wspr ")]
                 ]
             )
     await event.answer([dn])
@@ -81,7 +81,7 @@ Click The Below Button To See The Message!
             description="It's a secret message! Sssh!",
             text=text,
             buttons=[
-                [Button.inline(" Show Message! ", data="wspr")]
+                [Button.inline(" 𝗦𝗵𝗼𝘄 𝗠𝗲𝘀𝘀𝗮𝗴𝗲! 👀 ", data="wspr")]
                 ]
             )
     await event.answer(
@@ -97,7 +97,7 @@ async def ws(event):
     lol = [int(db["self"])]
     lol.append(user)
     if event.sender.id not in lol:
-        await event.answer("🔐 This message is not for you!", alert=True)
+        await event.answer("🔐 𝗧𝗵𝗶𝘀 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗶𝘀 𝗻𝗼𝘁 𝗳𝗼𝗿 𝘆𝗼𝘂! 🤔", alert=True)
         return
     msg = db["msg"]
     if msg == []:
