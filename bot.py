@@ -35,7 +35,7 @@ async def die(event):
     dn = event.builder.article(
             title="It's a whisper bot!",
             description="It's a whisper Bot!\n(c) SC Projects LK",
-            text=f"**It's a whisper bot**\n`@{me} whisper UserID|Message`\n**(c) SC Projects LK**",
+            text=f"**It's a whisper bot**\n`@{me} wspr UserID|Message`\n**(c) SC Projects LK**",
             buttons=[
                 [Button.switch_inline(" 𝗚𝗼 𝗜𝗻𝗹𝗶𝗻𝗲 ", query="wspr ")]
                 ]
@@ -57,7 +57,7 @@ async def inline(event):
     except ValueError:
         await event.answer(
                 [],
-                switch_pm=f"Give a message too!",
+                switch_pm=f"Give a message too! 🤔",
                 switch_pm_param="start"
                 )
     try:
@@ -77,8 +77,8 @@ Click The Below Button To See The Message!
 **Note:** __Only {ui.user.first_name} can open this!__
     """
     dn = event.builder.article(
-            title="Its a secret message! Sssh",
-            description="It's a secret message! Sssh!",
+            title="Its a secret message! Sssh 🤐",
+            description="It's a secret message! Sssh!🤐",
             text=text,
             buttons=[
                 [Button.inline(" 𝗦𝗵𝗼𝘄 𝗠𝗲𝘀𝘀𝗮𝗴𝗲! 👀 ", data="wspr")]
@@ -86,7 +86,7 @@ Click The Below Button To See The Message!
             )
     await event.answer(
             [dn],
-            switch_pm="It's a secret message! Sssh",
+            switch_pm="It's a secret message! Sssh 🤐",
             switch_pm_param="start"
             )
 
