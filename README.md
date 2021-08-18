@@ -10,5 +10,7 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 # Credits 🐈
 
 🤝 Reeshuxd for his code
+
 🤝 Dan for his Pyrogram
+
 🤝 Me For Adding Bold Letters and other things to make the bot better 😅
