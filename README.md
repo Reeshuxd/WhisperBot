@@ -9,7 +9,7 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 
 # Credits 🐈
 
-🤝 *[Reeshuxd](https://github.com/Reeshuxd)* for his code
+🤝 [*Reeshuxd*](https://github.com/Reeshuxd) for his code
 
 🤝 Dan for his Pyrogram
 
