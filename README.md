@@ -22,3 +22,6 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 ## Deploy to Heroku via Workflows 
 
 ### Fork This Repo And Create These Secrets 👇
+
+• HEROKU_API_KEY :- Get It From https://dashboard.heroku.com/account.
+• HEROKU_EMAIL :- The Heroku Account mail That you want to deploy the bot.
