@@ -9,7 +9,7 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 
 # Credits 🐈
 
-🤝 [*Reeshuxd*](https://github.com/Reeshuxd) for his code
+🤝 [**Reeshuxd**](https://github.com/Reeshuxd) for his code
 
 🤝 Dan for his Pyrogram
 
@@ -27,4 +27,4 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 
 • ```HEROKU_EMAIL``` :- The Heroku Account mail That you want to deploy the bot.
 
-• ```HEROKU_APP_NAME``` :- The Name Of the App (Use A Rare name otherwise bot will not be deployed.
+• ```HEROKU_APP_NAME``` :- The Name Of the App (Use A Rare name otherwise bot will not be deployed).
