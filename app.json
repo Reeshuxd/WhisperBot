@@ -8,7 +8,7 @@
 		"python",
 		"telethon"
 	],
-	"repository": "https://github.com/Reeshuxd/WhisperBot",
+	"repository": "https://github.com/scprojectslk/WhisperBot",
 	"env": {
 		"TOKEN": {
 			"description": "Your TeleGram Bot Token ( @BotFather )",
