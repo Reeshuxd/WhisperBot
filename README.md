@@ -17,11 +17,13 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 
 ## Vars For Heroku
 
-• ```TOKEN``` :- Token of your bot get it from [@Botfather.](https://t.me/Botfather)
+• ```TOKEN``` :- Token of your bot get it from [**@Botfather.**](https://t.me/Botfather)
 
 ## Deploy to Heroku via Workflows 
 
-### Fork This Repo And Create These Secrets 👇
+**Fork This Repo And Create These Secrets** 👇
+
+• ```TOKEN``` :- Token of your bot get it from [**@Botfather.**](https://t.me/Botfather)
 
 • ```HEROKU_API_KEY``` :- Get It From https://dashboard.heroku.com/account This Link
 
