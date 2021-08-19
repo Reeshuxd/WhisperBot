@@ -17,7 +17,7 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 
 ## Vars For Heroku
 
-• TOKEN :- Token of your bot get it from [@Botfather.](https://t.me/Botfather)
+• '''TOKEN''' :- Token of your bot get it from [@Botfather.](https://t.me/Botfather)
 
 ## Deploy to Heroku via Workflows 
 
