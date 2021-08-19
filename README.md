@@ -26,3 +26,5 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 • ```HEROKU_API_KEY``` :- Get It From https://dashboard.heroku.com/account This Link
 
 • ```HEROKU_EMAIL``` :- The Heroku Account mail That you want to deploy the bot.
+
+• ```HEROKU_APP_NAME``` :- The Name Of the App (Use A Rare name otherwise bot will not be deployed.
