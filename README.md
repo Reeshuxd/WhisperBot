@@ -13,7 +13,7 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 
 🤝 Dan for his Pyrogram
 
-🤝 Me For Adding Bold Letters and Workflows Deployment method for Heroku to make the repo & bot better 😅
+🤝 Me For Adding Bold Letters and Workflows Deployment method for Heroku to make the repo & bot better 😅.
 
 ## Vars For Heroku
 
@@ -25,7 +25,7 @@ A Inline TeleGram Bot that can send messeges via bot to a specific user and only
 
 • ```TOKEN``` :- Token of your bot get it from [**@Botfather.**](https://t.me/Botfather)
 
-• ```HEROKU_API_KEY``` :- Get It From https://dashboard.heroku.com/account This Link
+• ```HEROKU_API_KEY``` :- Get It From **https://dashboard.heroku.com/account** This Link
 
 • ```HEROKU_EMAIL``` :- The Heroku Account mail That you want to deploy the bot.
 
